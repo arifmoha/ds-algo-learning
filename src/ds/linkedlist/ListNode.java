@@ -307,6 +307,15 @@ public class ListNode {
         return result;
     }
 
+    public static ListNode reverseByRecurse(ListNode head, ListNode result){
+        if(head == null) return result;
+
+        ListNode next = head.next;
+        head.next = result;
+        result = head;
+        return reverseByRecurse(next, result);
+    }
+
     public static boolean isPalindrome(ListNode node){
         ListNode revNode = reverse(node);
 

@@ -1,4 +1,4 @@
-package algo.dp;
+package algo.recurse;
 
 public class TowerOfHanoi {
     public static void main(String[] args){

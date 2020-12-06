@@ -1,7 +1,6 @@
 package test.dp;
 
-import algo.dp.CoinChange;
-import algo.dp.TripleStep;
+import algo.recurse.TripleStep;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

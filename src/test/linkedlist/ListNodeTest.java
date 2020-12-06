@@ -235,6 +235,14 @@ class ListNodeTest {
     }
 
     @Test
+    void testReverseLinkedListByRecurse() {
+        ListNode node = ListNodeTestUtil.arrayToLinkedList(new int[]{1,2,3});
+        ListNode result = ListNode.reverseByRecurse(node, null);
+        String linkedListStr = ListNodeTestUtil.linkedListToString(result);
+        assertEquals("3->2->1", linkedListStr);
+    }
+
+    @Test
     void testPalindromeToTrue() {
         ListNode node = ListNodeTestUtil.arrayToLinkedList(new int[]{0,1,2,3,2,1,0});
         assertTrue(ListNode.isPalindrome(node));
